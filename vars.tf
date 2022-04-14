@@ -50,7 +50,17 @@ variable "template_name" {
 }
 
 
-@@ -59,11 +67,13 @@ variable "vm_memory" {
+// The virtual machine cpu
+variable "vm_cpu" {
+  type = number
+  description = "Number of vCPUs"
+  default = 2
+}
+variable "vm_memory" {
+  type = number
+  description = "Amount of memory in MB"
+  default = 2048
+}
 variable "vm_prefix" {
   type = string
   description = "The name prefix of the virtual machines to create"
@@ -64,7 +74,10 @@ variable "vm_folder" {
 }
 
 variable "vm_count" {
-@@ -75,4 +85,5 @@ variable "vm_count" {
+  type = number
+  description = "Number of VMs to provision"
+  default = 1
+}
 variable "vm_domain" {
   type = string
   description = "Domain Name for the virtual machine"
