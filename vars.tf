@@ -73,7 +73,7 @@ variable "vm_prefix" {
 variable "vm_folder" {
   type = string
   description = "Name of folder"
-  default = "cisg-arch-day"
+  default = "02.DC1-CLUSTER-02"
 }
 
 variable "vm_count" {
