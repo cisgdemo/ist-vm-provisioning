@@ -67,7 +67,7 @@ variable "vm_memory" {
 variable "vm_prefix" {
   type = string
   description = "The name prefix of the virtual machines to create"
-  default = "jaheo-demo"
+  default = "jaheo"
 }
 
 variable "vm_folder" {
