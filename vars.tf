@@ -73,7 +73,7 @@ variable "vm_prefix" {
 variable "vm_folder" {
   type = string
   description = "Name of folder"
-  default = "02.DC1-CLUSTER-02"
+  default = "cisg-arch-test"
 }
 
 variable "vm_count" {
@@ -85,5 +85,5 @@ variable "vm_count" {
 variable "vm_domain" {
   type = string
   description = "Domain Name for the virtual machine"
-  default = "cisg-arch-day"
+  default = "cisg-arch-test"
 }
