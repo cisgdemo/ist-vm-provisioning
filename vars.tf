@@ -1,8 +1,7 @@
-
 variable "vsphere_server" {
   type = string
   description = "Hostname or IP address of your vCenter server" 
-  default = "10.70.137.15"
+  default = "10.70.136.15"
 }
 
 variable "vsphere_user" {
@@ -20,14 +19,14 @@ variable "vsphere_password" {
 variable "datacenter" {
   type = string
   description = "The datacenter the resources will be created in"
-  default = "DC2"
+  default = "DC1"
 }
 
 
 variable "resource_pool" {
   type = string
   description = "Name of the resource pool"
-  default = "cisg-arch-day"
+  default = "IST-Demo"
 }
 
 variable "datastore_name" {
@@ -40,50 +39,34 @@ variable "datastore_name" {
 variable "network_name" {
   type = string
   description = "Name of the network"
-  default = "MGMT-Net_137.x"
+  default = "MGMT-Net_136.x"
 }
 
 // The name of the template to use when cloning.
 variable "template_name" {
   type = string
   description = "Name of the template"
-  default = "Test-Centos7"
+  default = "136.160Ubunutu2004"
 }
 
 
-// The virtual machine cpu
-variable "vm_cpu" {
-  type = number
-  description = "Number of vCPUs"
-  default = 1
-}
-
-variable "vm_memory" {
-  type = number
-  description = "Amount of memory in MB"
-  default = 2048
-}
-
+@@ -59,11 +67,13 @@ variable "vm_memory" {
 variable "vm_prefix" {
   type = string
   description = "The name prefix of the virtual machines to create"
-  default = "jaheo"
+  default = "jenkins demo"
 }
 
 variable "vm_folder" {
   type = string
   description = "Name of folder"
-  default = "cisg-arch-test"
+  default = "IST-Demo"
 }
 
 variable "vm_count" {
-  type = number
-  description = "Number of VMs to provision"
-  default = 1
-}
-
+@@ -75,4 +85,5 @@ variable "vm_count" {
 variable "vm_domain" {
   type = string
   description = "Domain Name for the virtual machine"
-  default = "cisg-arch-test"
+  default = "IST-Demo"
 }
